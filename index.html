@@ -13,7 +13,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://hassanalipoetry.vercel.app/" />
 
-    <!-- GOOGLE SEARCH CONSOLE VERIFICATION -->
+    <!-- UPDATED GOOGLE SEARCH CONSOLE VERIFICATION -->
     <meta name="google-site-verification" content="VsghHItLlhPANzhUaxPkLgLkRunzxUUP2sY-nNAnIi4" />
 
     <!-- OPEN GRAPH / SOCIAL MEDIA -->
@@ -74,30 +74,30 @@
 
         .font-serif { font-family: 'Playfair Display', serif; }
 
-        /* FIXED: BRIGHT CLEAR ROSE COVER IMAGE */
+        /* FIXED: HIGH-RES COVER IMAGE LOGIC */
         .hero-cover {
             position: relative;
             width: 100%;
             height: 65vh;
             min-height: 450px;
-            /* Using a highly reliable Pexels/Unsplash CDN for Golden Roses */
-            background-image: url('https://images.pexels.com/photos/1035668/pexels-photo-1035668.jpeg?auto=compress&cs=tinysrgb&w=2000');
-            background-position: center 40%;
+            /* Stable high-resolution Golden Rose landscape from Unsplash */
+            background-image: url('https://images.unsplash.com/photo-1550133730-695473e544be?q=80&w=2000&auto=format&fit=crop');
+            background-position: center 30%;
             background-size: cover;
             background-repeat: no-repeat;
-            background-color: #fdf5e6; /* Fallback color */
+            background-color: #fdf5e6;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: -200px;
+            z-index: 1;
         }
 
-        /* Mask to blend with white content */
         .hero-cover::after {
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(to bottom, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%);
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 100%);
         }
 
         .glass-panel {
@@ -180,7 +180,7 @@
         </div>
     </nav>
 
-    <!-- CLEAR GOLDEN ROSE COVER -->
+    <!-- HERO COVER IMAGE -->
     <div class="hero-cover"></div>
 
     <!-- HERO PROFILE SECTION -->
